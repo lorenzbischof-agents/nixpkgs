@@ -615,7 +615,7 @@ buildStdenv.mkDerivation {
       pixman
       xorgproto
       zlib
-      (if (lib.versionAtLeast version "144") then nss_latest else nss_esr)
+      (if (lib.versionAtLeast version "154") then nss_latest else nss_esr)
     ]
     ++ lib.optional alsaSupport alsa-lib
     ++ lib.optional jackSupport libjack2
